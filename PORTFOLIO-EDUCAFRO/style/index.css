@@ -1,0 +1,499 @@
+.navbar {
+  background-color: #252525;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: #333;
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #8540ce;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+/*FIM MENU*/
+
+.header_section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header_section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header_section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #252525c2;
+}
+
+.text_header {
+  z-index: 10;
+  position: relative;
+  text-align: center;
+}
+
+.text_header h1 {
+  font-family: Lobster;
+  font-size: 3.9rem;
+  color: #8540ce;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px white;
+}
+
+.text_header p {
+  font-size: 1rem;
+  color: rgb(253, 240, 253);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.btn_download {
+  min-width: 150px;
+  border: solid 1px #8540ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8540ce;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 15px 15px;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn_download:hover {
+  color: #fff;
+}
+
+.section-sobre {
+  background-color: rgb(255, 255, 255);
+  padding-top: 80px;
+  min-height: calc(100vh - 80px - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.foto {
+  background-image: url("../img/Debora\ \(1\).jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 470px;
+}
+
+.about_text-a img {
+  margin-left: 55px;
+}
+
+.about_text p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 60px;
+}
+
+/* Estilos dos icones  PAGINA HOME */
+.conhecimento i {
+  font-size: 45px;
+  margin: 2px;
+}
+
+.interesse-icon i {
+  font-size: 45px;
+  margin: 2px;
+}
+
+/* Estilos da seção "Área de Conhecimento"  PAGINA HOME */
+.conhecimento {
+  text-align: center;
+}
+
+.conhecimento h4 {
+  font-family: "Lobster";
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px #cfacf4;
+}
+
+/* Estilos da seção "Interesse" PAGINA HOME */
+.interesse {
+  margin-bottom: 60px;
+}
+
+#section-interesse {
+  text-align: center;
+}
+
+#section-interesse h4 {
+  font-family: "Lobster";
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #cfacf4;
+}
+
+@media (max-width: 768px) {
+  .foto {
+    height: 300px;
+  }
+
+  .about_text {
+    margin-top: 20px;
+  }
+
+  .about_text h1 {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about_text p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .conhecimento i,
+  .interesse-icon i {
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  .conhecimento h4,
+  #section-interesse h4 {
+    font-size: 28px;
+  }
+  .header_section {
+    height: 50vh;
+  }
+}
+
+/* ESTILO PAGINA CERTIFICADO */
+
+.imgCertificado {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.section-certificado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.texto-certificado {
+  text-align: center;
+}
+
+.texto-certificado h4 {
+  font-family: "Lobster";
+  color: #6912c7;
+  font-size: 55px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 2px #a4a4a4;
+  margin-top: 80px;
+}
+
+.certificados-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.certificado-col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.texto-certificado p {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*ESTILO PAGINA CONTATO*/
+.container.contato {
+  display: flex;
+  align-items: center;
+}
+
+.container.contato .col-6 {
+  flex: 1;
+  padding: 20px;
+}
+
+.container.contato .col-6 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container.contato .form-ctt {
+  text-align: center;
+}
+
+.container.contato .form-ctt label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container.contato .form-ctt input,
+.container.contato .form-ctt textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.container.contato .form-ctt textarea {
+  resize: none;
+}
+
+.container.contato .form-ctt button {
+  background-color: #6912c7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container.contato .form-ctt button:hover {
+  background-color: #4f049f;
+}
+
+.container.contato .form-ctt textarea::placeholder {
+  color: #999;
+}
+
+.ctt h4 {
+  font-family: "Lobster";
+  color: #6912c7;
+  font-size: 55px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px #a4a4a4;
+  text-align: center;
+  margin-top: 40px;
+}
+
+label {
+  color: #6912c7;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .container.contato {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container.contato .col-md-6 {
+    padding: 10px;
+  }
+
+  .container.contato img {
+    width: 250px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/******** CONFIGURAÇÃO pagina PROJETOS**********/
+.github_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Github_projetos .col-4 {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 90%;
+  margin-left: 15px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.btn-projetos {
+  background-color: #8540ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  width: 170px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn-projetos:hover {
+  background-color: transparent;
+  border: solid 1px #8540ce;
+  color: #8540ce;
+}
+
+.btn-todoprojetos {
+  background-color: #8540ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  width: 170px;
+  margin: 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-todoprojetos:hover {
+  background-color: transparent;
+  border: solid 1px #8540ce;
+  color: #8540ce;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .github_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+
+/******** CONFIGURAÇÃO RODAPÉ**********/
+footer {
+  background-color: #121415;
+  padding: 40px 0;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 85px;
+}
+
+#rodape-sobre {
+  text-align: center;
+}
+
+#rodape-sobre .navbar-brand {
+  margin-right: 10px;
+}
+
+.social-rodape {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-rodape a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 30px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  width: 40px;
+}
+
+.social-rodape a:hover {
+  margin: 0 10px;
+  color: #d1acf8;
+  font-size: 30px;
+}
+
+.desenvolvido {
+  font-size: 9px;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+footer.fixed-bottom {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #121415;
+  padding: 20px 0;
+  color: #fff;
+}
+
