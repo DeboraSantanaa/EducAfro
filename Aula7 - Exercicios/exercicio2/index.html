@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+<style>
+    .texto{
+        font-size: 20px;
+    }
+</style>
+</head>
+
+
+<body>
+    <div class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi, ducimus veritatis est molestiae
+        pariatur, aspernatur illum amet obcaecati neque molestias laudantium porro eveniet, eos quam dolorem iusto esse!
+        Corporis?
+        <button onclick="mais()"> + </button>
+        <button onclick="menos()"> - </button>
+    </div>
+    
+    <script>
+ function mais() {
+        var texto = document.querySelector('.texto');
+        var estilo = window.getComputedStyle(texto);
+        var tamanhoAtual = parseInt(estilo.fontSize); 
+        texto.style.fontSize = (tamanhoAtual + 5) + 'px'; 
+    }
+
+        function menos() {
+            var texto = document.querySelector('.texto');
+            var estilo = window.getComputedStyle(texto);
+            var tamanhoAtual = parseInt(estilo.fontSize);
+
+            if(tamanhoAtual>10){
+                texto.style.fontSize = (tamanhoAtual - 5) + 'px'; 
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

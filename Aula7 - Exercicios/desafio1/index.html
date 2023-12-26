@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 1</title>
+</head>
+<body>
+    <input type="number" id="numero">
+    <button onclick="enviar()">Enviar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function enviar() {
+            var numero = document.getElementById('numero').value;
+            var string = '';
+
+            for (let i = 1; i <= numero; i++) {
+                string += '#'; 
+
+                
+                if (i%2==0 ) {
+                    string += '-';
+                }
+            }
+
+            document.getElementById('mensagem').innerText = string;
+        } 
+    </script>
+</body>
+</html>
